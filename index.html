@@ -1,53 +1,119 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoLand — Автосервис в Томске | Профессиональный ремонт и обслуживание</title>
-    <meta name="description" content="Профессиональный автосервис AutoLand в Томске. Диагностика, ремонт, ТО, чип-тюнинг. Рейтинг 4.8. проспект Мира, 48. Тел: +7 913 840 59 43" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #030712;
-        color: #ffffff;
-        font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      }
-      #root {
-        min-height: 100vh;
-      }
-    </style>
-    <script>
-      (function () {
-        const isInIframe = window.self !== window.top;
-        function applyThemeToDOM(theme) {
-          document.documentElement.classList.remove("light", "dark");
-          document.documentElement.classList.add(theme);
-          document.documentElement.setAttribute("data-theme", theme);
-        }
-        if (isInIframe) {
-          window.addEventListener("message", function (event) {
-            if (event.data && typeof event.data.theme === "string") {
-              var theme = event.data.theme;
-              if (theme === "light" || theme === "dark") {
-                applyThemeToDOM(theme);
-              }
-            }
-          });
-        } else {
-          applyThemeToDOM("dark");
-        }
-      })();
-    </script>
-    <script type="module" crossorigin src="./assets/index-DmXc8XVN.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DyVJ3wBc.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AutoLand — автосервис в Тюмени. Диагностика, ремонт и техническое обслуживание автомобилей.">
+  <title>AutoLand — автосервис в Тюмени</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">A</span>
+      <span><b>Auto<span>Land</span></b><small>АВТОСЕРВИС В ТЮМЕНИ</small></span>
+    </a>
+    <nav class="menu" aria-label="Основная навигация">
+      <a href="#services">Услуги</a><a href="#about">О нас</a><a href="#offers">Акции</a>
+      <a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-contact">
+      <a href="tel:+73452688888">+7 (3452) 68-88-88</a><small>Ежедневно с 9:00 до 21:00</small>
+    </div>
+    <a class="btn btn-red" href="#booking">Записаться онлайн</a>
+    <button class="burger" aria-label="Открыть меню">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow">AUTOLAND · ТЮМЕНЬ</div>
+      <h1>Профессиональный<br>автосервис <em>в Тюмени</em></h1>
+      <p>Диагностика, ремонт и техническое обслуживание автомобилей всех марок.</p>
+      <a class="btn btn-red btn-lg" href="#booking">Записаться на ремонт <span>→</span></a>
+    </div>
+    <aside class="hero-card">
+      <div class="hero-logo">A<span>utoLand</span></div>
+      <ul><li>Опытные мастера</li><li>Современное оборудование</li><li>Гарантия на работы</li></ul>
+    </aside>
+  </div>
+</section>
+
+<section class="quick-services">
+  <div class="container quick-grid">
+    <div>⚙<span>Диагностика<br>и ремонт</span></div>
+    <div>⌁<span>Техническое<br>обслуживание</span></div>
+    <div>◉<span>Шиномонтаж<br>и балансировка</span></div>
+    <div>❄<span>Заправка<br>кондиционеров</span></div>
+    <div>◌<span>Ремонт<br>тормозной системы</span></div>
+  </div>
+</section>
+
+<section class="section light" id="services">
+  <div class="container">
+    <div class="section-head"><h2>Услуги и цены</h2><a href="#booking">Все услуги →</a></div>
+    <div class="service-grid">
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1632823469850-1c4a4f1a6c54?auto=format&fit=crop&w=900&q=80" alt=""><div><h3>Диагностика</h3><p>Компьютерная диагностика всех систем автомобиля</p><b>от 1 000 ₽</b><span>→</span></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=900&q=80" alt=""><div><h3>Замена масла</h3><p>Масла и фильтры любых брендов</p><b>от 1 500 ₽</b><span>→</span></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80" alt=""><div><h3>Тормозная система</h3><p>Диагностика, замена, ремонт</p><b>от 1 800 ₽</b><span>→</span></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=900&q=80" alt=""><div><h3>Ходовая часть</h3><p>Диагностика и ремонт подвески</p><b>от 1 500 ₽</b><span>→</span></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=80" alt=""><div><h3>Выхлопная система</h3><p>Диагностика, ремонт, замена</p><b>от 1 200 ₽</b><span>→</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-inner">
+    <div class="about-copy">
+      <div class="eyebrow">ПОЧЕМУ ВЫБИРАЮТ AUTOLAND</div>
+      <h2>Надёжный автосервис<br>с заботой о вашем авто</h2>
+      <p>Мы ценим ваше время и доверие, поэтому используем современное оборудование, качественные запчасти и проверенные технологии. Наши мастера — опытные специалисты, которые знают своё дело.</p>
+      <a class="btn btn-red" href="#contacts">Подробнее о нас →</a>
+    </div>
+    <div class="benefits">
+      <div><i>✓</i><b>Гарантия</b><span>на все виды работ</span></div>
+      <div><i>◷</i><b>Оперативная</b><span>диагностика</span></div>
+      <div><i>☆</i><b>Честные цены</b><span>без скрытых платежей</span></div>
+      <div><i>♧</i><b>Команда</b><span>профессионалов</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="reviews">
+  <div class="container">
+    <div class="section-head"><h2>Отзывы наших клиентов</h2><a href="#">Все отзывы →</a></div>
+    <div class="review-grid">
+      <article><div class="avatar">A</div><b>Алексей К.</b><small>12.03.2025</small><div class="stars">★★★★★</div><p>Отличный сервис! Быстро нашли проблему, всё сделали качественно. Теперь только сюда!</p></article>
+      <article><div class="avatar">М</div><b>Марина П.</b><small>05.03.2025</small><div class="stars">★★★★★</div><p>Делала ТО, осталась довольна. Всё чётко, без навязывания лишних услуг.</p></article>
+      <article><div class="avatar">Д</div><b>Дмитрий С.</b><small>28.02.2025</small><div class="stars">★★★★★</div><p>Профессиональные мастера, современное оборудование. Цены адекватные.</p></article>
+      <article><div class="avatar">Е</div><b>Екатерина В.</b><small>20.02.2025</small><div class="stars">★★★★★</div><p>Удобная запись, вежливый персонал, всё сделали в срок. Спасибо за качественную работу!</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container booking-grid">
+    <div class="booking-copy"><div class="booking-icon">▣</div><h2>Запишитесь на сервис<br>в пару кликов</h2><p>Выберите удобное время и оставьте заявку — мы свяжемся с вами в ближайшее время.</p><a class="btn btn-red" href="tel:+73452688888">Записаться онлайн →</a></div>
+    <div class="contact-box" id="contacts"><p>⌖ <b>Тюмень, ул. Республики, 254</b></p><p>⌕ <b>+7 (3452) 68-88-88</b></p><p>◷ <b>Ежедневно с 9:00 до 21:00</b></p></div>
+    <div class="map"><div class="pin">AutoLand</div></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <a class="brand" href="#"><span class="brand-mark">A</span><span><b>Auto<span>Land</span></b><small>АВТОСЕРВИС В ТЮМЕНИ</small></span></a>
+    <nav><a href="#services">Услуги</a><a href="#about">О нас</a><a href="#offers">Акции</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+    <div class="footer-phone">☎ +7 (3452) 68-88-88<br><small>Ежедневно с 9:00 до 21:00</small></div>
+    <a class="btn btn-red" href="#booking">Записаться онлайн</a>
+  </div>
+  <div class="container footer-bottom"><span>© 2026 AutoLand. Все права защищены.</span><span>Тюмень, ул. Республики, 254</span><span>VK &nbsp; TG &nbsp; ▶</span></div>
+</footer>
+<script src="script.js"></script>
+</body>
 </html>
